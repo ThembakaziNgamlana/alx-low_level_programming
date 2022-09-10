@@ -13,7 +13,7 @@
  int n;
  int l;
 
- srand(time(0);
+ srand(time(0));
  n= rand() - RAND_MAX / 2;
  l = n % 10;
  
@@ -30,3 +30,4 @@
         prinf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
  }
  return(0);
+ }
