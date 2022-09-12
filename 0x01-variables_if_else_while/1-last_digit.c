@@ -1,65 +1,31 @@
-<<<<<<< HEAD
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdio.h>
+/* more headers goes there */
 /**
- * main - print if the number is positive, zero, or negative
- *
- * Description: using the main  Function
- * prints "Programming is positive, zero, or negative"
- * Return: 0
+ *  main - entry point
+ *  Description: prints  if a number is positive or negative
+ *  Return: 0
  */
 int main(void)
 {
 int n;
-int m;
+
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-m = n % 10;
-if (m > 5)
+/* your code goes there */
+if (n > 0)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, m);
+printf("%d is positive\n", n);
 }
-else if (m < 6 && m != 0)
+else if (n == 0)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, m);
+printf("%d is zero\n", n);
 }
-else
+else if (n < 0)
 {
-printf("Last digit of %d is %d and is 0\n", n, m);
+printf("%d is negative\n", n);
 }
 return (0);
 }
-=======
- #include <stdlib.h>
- #include <time.h>
- #include <stdio.h>
- /**
-  * main - print if the number is postive, zero , or neagative
-  *
-  * Description: using the main function
-  * prints "Programming is positive, zero, or negative
-  * Return: 0
-  */
- int main(void)
- {
- int n;
- int m;
- srand(time(0));
- n= rand() - RAND_MAX / 2;
- m = n % 10;
- if(m > 5)
- {
- printf("Last digit %d is %d and is greater than 5\n", n, m);
- }
- else if (m <6 && m != 0)
- {
- printf("Last digit of %d is %d and is less than 6 and not  is 0\n", n, , m);
- }
- else 
- {
- printf("Last digit of %d is %d and is  0\n", str, n, L);
- }
- return(0);
- }
->>>>>>> 18bc3982d7455906665dbf22860cbc93980f468a
+ 
